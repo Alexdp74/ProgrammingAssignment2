@@ -42,7 +42,7 @@ cacheSolve <- function(x, ...) {
     }
     
     mat <- x$get_matrix()
-    inv <- solve(x, ...)
+    inv <- solve(mat, ...)
     x$set_inverse(inv)
     
     inv
